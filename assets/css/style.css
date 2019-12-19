@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,700i&display=swap');
+
 /* ---------- Colors ---------- */
 
+.bg-color-nav {
+    background-color: rgba(0, 0, 0, 0.5)
+}
 .bg-color-promise {
     background-color: #000000;
 }
@@ -8,31 +13,158 @@
     background-color: #ec7f01;
 }
 
+.bg-color-footer {
+    background-color: #686868;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #333333;
+}
+
+p {
+    color: #333333;
+}
+
+/* ---------- General Styling ---------- */
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.image-padding {
+    padding: 0px; 
+}
+
+a {
+ text-decoration: none;
+}
+
+/* ---------- General Text Styling ---------- */
+
+h1 {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+h3 {
+    text-align: center;
+    padding-bottom: 25px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+}
+
+p {
+    color: #333333;
+    font-family: 'Oswald', sans-serif;
+}
+
 /* ---------- Navbar ---------- */
 
-.nav {
-    position: fixed;
-    z-index: 2;
-    margin: 0 50% 0 50%
+.nav-link {
+    color: #d4af37;
+}
+
+.logo {
+    text-decoration: none;
+    font-family: monospace;
+    font-size: 24px;
+    border: 2px solid;  
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ec7f01; 
 }
 
 /* ---------- Hero Image ---------- */
 
+
 .hero-image {
     background-image: url("../images/signatureHero.jpeg");
-    background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 100vh;
-
-}
-
-.promiseburger {
     max-width: 100%;
     height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+}
 
+.hero-quote {
+    margin-top: 55%;
+}
+
+.hero-quote-md {
+    width: 90%;
+    margin: auto;
+    margin-top: 20%;
+}
+
+.hero-quote h1,
+.hero-quote-md h1 {
+    color: #fafafa;
+    font-weight: 700;
+    font-size: 3em;
+}
+
+.hero-button {
+    border: 1px solid #fafafa; 
+    border-radius: 0;
+    color: #fafafa;
+    font-size: 1.7em;
+    margin-top: 25px; 
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero-button:hover {
+    background-color: rgba(239, 127, 1, 0.5);
+    color: #fafafa;
+}
+
+/* ---------- Our Promise ---------- */
+
+.promise-header {
+    /* color: #d4af37;  */
+    color: #ec7f01;
+}
+
+.promise-text {
+    width: 75%;
+    font-size: 1.2em;
+    text-align: justify;
+    margin: auto;
+    /* color: #d4af37; */
+    color: #ec7f01;
+    padding-bottom: 25px;
+}
+
+.promise-burger {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .promise-row {
-    height: 100vh
+    height: 100%;
 }
+
+/* ---------- Menu ---------- */
+
+
+
+/* ---------- Testimonials ---------- */
+
+.testimonial-styling {
+    transform: rotate(20);
+}
+
+.navbar-nav1 {
+    margin-right: 0;
+    margin-left: auto;
+}
+
+

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Signature</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
@@ -16,31 +16,36 @@
     <!-- Navigation -->
 
     <header>
-        <nav class="navbar navbar-expand-sm fixed-top navbar-dark">
+        <nav class="navbar navbar-expand-sm fixed-top navbar-dark main-nav bg-color-nav">
             <div class="container">
-                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                    data-target="#navbar1">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
                 <div class="collapse navbar-collapse" id="navbar1">
-                    <ul class="navbar-nav">
+                    <ul class="nav navbar-nav1">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Promise</a>
-                        </li>
-                        <li>
-                            <a class="navbar-brand" href="#">LOGOPLACEHOLDER</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Reservation</a>
+                            <a class="nav-link" href="#promise-nav">Promise</a>
                         </li>
                     </ul>
                 </div>
+                <ul class="nav navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link logo" href="#">SIGNATURE</a></li>
+                </ul>
+                <div class="collapse navbar-collapse" id="navbar2">
+                    <ul class="nav navbar-nav2" id="navbarSupportedContent">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#menu-nav">Menu</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reservation-nav">Reservation</a>
+                        </li>
+                    </ul>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent #navbar-nav2" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
         </nav>
     </header>
@@ -49,23 +54,42 @@
 
     <div class="container-fluid">
         <div class="row">
-            <div class="col hero-image"></div>
+            <div class="col hero-image">
+                    <section class="text-center hero-quote d-md-none">
+                            <h1>"We have one passion: Hamburgers"</h1>
+                            <a href="#reservation-nav"><button class="btn hero-button">Place a Reservation</button></a>
+                    </section>
+                    <section class="text-center hero-quote-md d-none d-md-block">
+                            <h1>"We have one passion: Hamburgers"</h1>
+                            <a href="#reservation-nav"><button class="btn hero-button">Place a Reservation</button></a>
+                    </section>
+            </div>
         </div>
+
     </div>
 
     <!-- Restaurant Promise -->
 
-    <div class="container bg-color-promise">
+    <div class="container bg-color-promise" id="promise-nav">
         <div class="row promise-row">
             <div class="col-md-6">
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae dolorum hic quaerat expedita atque
-                    qui, soluta animi, saepe esse accusantium officiis numquam ipsa veritatis obcaecati suscipit dolores
-                    exercitationem consequuntur quae.
+                <h1 class="promise-header">Our Promise</h1>
+                <p class="promise-text">
+                    We have one passion: Hamburgers. Ever since 2012, it's been our mission to create the best burger
+                    possible. We've experimented with different cuts of meat, various buns, many, many sauces and,
+                    never lost sight of what the outcome must be. The best burger we can make.
+                </p>
+                <p class="promise-text">
+                    On this journey, we've discovered and started to work with the best local suppliers in Stockholm.
+                    We are very proud of the fact that everything in our burgers is sourced locally.
+                </p>
+                <p class="promise-text">
+                    When you come to Signature we promise that the burger you're served is the best one we've
+                    made. Every single time.
                 </p>
             </div>
-            <div class="col-md-6">
-                <img src="assets/images/signatureQuest.jpg" alt="picture of falling burger" class="promiseburger">
+            <div class="col-md-6 image-padding">
+                <img src="assets/images/signatureQuest.jpg" alt="picture of falling burger" class="promise-burger">
             </div>
         </div>
     </div>
@@ -73,8 +97,26 @@
     <!-- Restaurant Menu -->
 
     <div class="container bg-color-menu">
+
+        <div class="row" id="menu-nav">
+            <div class="col">
+                <h1 class="menu-header">Menu</h1>
+            </div>
+        </div>
+
         <div class="row">
+            <div class="col-md-8">
+                <h3 class="d-none d-md-block menu-sub-header">Hamburgers</h3>
+            </div>
+            <div class="col-md-4">
+                <h3 class="d-none d-md-block menu-sub-header">Sides</h3>
+            </div>
+        </div>
+
+        <div class="row">
+
             <div class="col-md-4 menu-items">
+                <h3 class="d-md-none menu-sub-header">Hamburgers</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia?
                 </p>
@@ -103,6 +145,7 @@
             </div>
 
             <div class="col-md-4">
+                <h3 class="d-md-none menu-sub-header">Sides</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia?
                 </p>
@@ -121,27 +164,105 @@
     <!-- Reservation Form & Contact information -->
 
     <div class="container">
-        <div class="row">
+        <div class="row" id="reservation-nav">
             <div class="col-md-8">
+                <h1>Reservation</h1>
+                <form action="" class="reservation-form">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" placeholder="First Name" class="form-control" id="form-first-name">
+                        </div>
+                        <div class="col">
+                            <input type="text" placeholder="Last Name" class="form-control" id="form-last-name">
+                        </div>
+                    </div>
 
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" placeholder="Phone Number" class="form-control" id="form-phone">
+                        </div>
+                        <div class="col">
+                            <input type="email" placeholder="Email adress" class="form-control" id="form-email">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control" type="date" value="2019-12-22" id="example-date-input">
+                        </div>
+                        <div class="col">
+                            <select class="custom-select">
+                                <option selected>17.00</option>
+                                <option value="1">18.00</option>
+                                <option value="2">19.00</option>
+                                <option value="3">20.00</option>
+                                <option value="4">21.00</option>
+                            </select>
+                        </div>
+                    </div>
+
+                </form>
             </div>
 
             <div class="col-md-4">
+                <h1 class="contact-header">Contact</h1>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, atque commodi adipisci earum
+                    vel odit doloribus aliquam explicabo vitae possimus quasi accusantium expedita eveniet mollitia
+                    blanditiis quo facilis aliquid. Libero nesciunt et, vitae possimus cum provident magnam rem illum
+                    culpa.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Testimonials & Google Maps Navigation -->
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 testimonial-styling">
+
+                <h1 class="testimonial-header">Testimonials</h1>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nemo necessitatibus enim sapiente,
+                    nesciunt cum impedit maxime qui aspernatur neque.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nemo necessitatibus enim sapiente,
+                    nesciunt cum impedit maxime qui aspernatur neque.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nemo necessitatibus enim sapiente,
+                    nesciunt cum impedit maxime qui aspernatur neque.
+                </p>
+            </div>
+
+            <div class="col-md-8">
 
             </div>
         </div>
     </div>
 
-    <!-- Google Maps Navigation & Testimonials -->
-
-    <div class="container">
-        <div class="row"></div>
-    </div>
-
     <!-- Footer -->
 
-    <footer>
-
+    <footer class="conatiner-fluid">
+        <div class="row bg-color-footer">
+            <div class="col-md-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum dicta sapiente quos, itaque odit
+                    commodi eius sit facere ab atque qui nihil saepe pariatur doloremque nisi quibusdam consectetur
+                    incidunt culpa animi quo laborum. Totam est commodi iusto consectetur, distinctio temporibus iure,
+                    corporis illo, velit qui eveniet cupiditate voluptatum dolorem fugit corrupti quas sapiente? Cumque
+                    nesciunt sed laborum illum id vel.
+                </p>
+            </div>
+            <div class="col-md-4"></div>
+            <div class="col-md-4"></div>
+        </div>
     </footer>
 
 </body>
