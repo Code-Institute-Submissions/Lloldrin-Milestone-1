@@ -1,0 +1,38 @@
+/* ---------- Colors ---------- */
+
+.bg-color-promise {
+    background-color: #000000;
+}
+
+.bg-color-menu {
+    background-color: #ec7f01;
+}
+
+/* ---------- Navbar ---------- */
+
+.nav {
+    position: fixed;
+    z-index: 2;
+    margin: 0 50% 0 50%
+}
+
+/* ---------- Hero Image ---------- */
+
+.hero-image {
+    background-image: url("../images/signatureHero.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+
+}
+
+.promiseburger {
+    max-width: 100%;
+    height: 100vh;
+
+}
+
+.promise-row {
+    height: 100vh
+}
