@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,700i&display=swap');
+/* ---------- Imported Fonts ---------- */
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,700i|Oswald:300,700&display=swap');
 
 /* ---------- Colors ---------- */
 
@@ -46,19 +48,21 @@ a {
 
 /* ---------- General Text Styling ---------- */
 
-h1 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-align: center;
-    padding-top: 25px;
-    padding-bottom: 25px;
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
+    padding-bottom: 25px;
+    text-transform: uppercase;
 }
 
-h3 {
-    text-align: center;
-    padding-bottom: 25px;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px;
+h1 {
+    padding-top: 25px;
 }
 
 p {
@@ -68,8 +72,15 @@ p {
 
 /* ---------- Navbar ---------- */
 
+.navbar-nav1 {
+    margin-right: 0;
+    margin-left: auto;
+}
 .nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
     color: #d4af37;
+    margin: 0px 20px;
 }
 
 .logo {
@@ -91,7 +102,6 @@ p {
     background-size: cover;
     max-width: 100%;
     height: 100vh;
-    position: relative;
     background-attachment: fixed;
 }
 
@@ -105,23 +115,26 @@ p {
     margin-top: 20%;
 }
 
-.hero-quote h1,
-.hero-quote-md h1 {
+.hero-quote span,
+.hero-quote-md span {
     color: #fafafa;
     font-weight: 700;
     font-size: 3em;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.hero-button {
+.hero-btn {
+    color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
     border: 1px solid #fafafa; 
     border-radius: 0;
-    color: #fafafa;
-    font-size: 1.7em;
+    margin: auto;
     margin-top: 25px; 
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-.hero-button:hover {
+.hero-btn:hover {
     background-color: rgba(239, 127, 1, 0.5);
     color: #fafafa;
 }
@@ -129,8 +142,11 @@ p {
 /* ---------- Our Promise ---------- */
 
 .promise-header {
-    /* color: #d4af37;  */
     color: #ec7f01;
+}
+
+.promise-header-md {
+    margin-top: 25%;
 }
 
 .promise-text {
@@ -138,7 +154,6 @@ p {
     font-size: 1.2em;
     text-align: justify;
     margin: auto;
-    /* color: #d4af37; */
     color: #ec7f01;
     padding-bottom: 25px;
 }
@@ -148,23 +163,46 @@ p {
     max-height: 100%;
 }
 
-.promise-row {
+.promise-container {
     height: 100%;
 }
 
 /* ---------- Menu ---------- */
 
+.menu-container {
+        padding-bottom: 50px;
+}
 
+.menu-item-container {
+    height: 31%;
+    border-radius: 12px;
+    margin: 12px
+}
+
+.menu-item-container:hover{
+    background-color: rgba(255, 213, 179, 0.5);
+}
+
+.menu-items p {
+    width: 80%;
+    margin: auto;
+    text-align: justify;
+    padding-bottom: 0px;
+}
+
+.menu-item-header {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-top: 15px;
+    margin-bottom: 0px;
+    padding-top: 10px; 
+    padding-bottom: 0px;
+}
+
+.menu-items span {
+    font-style: italic;
+    font-weight: 300;
+}
 
 /* ---------- Testimonials ---------- */
-
-.testimonial-styling {
-    transform: rotate(20);
-}
-
-.navbar-nav1 {
-    margin-right: 0;
-    margin-left: auto;
-}
-
 

@@ -55,14 +55,15 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col hero-image">
-                    <section class="text-center hero-quote d-md-none">
-                            <h1>"We have one passion: Hamburgers"</h1>
-                            <a href="#reservation-nav"><button class="btn hero-button">Place a Reservation</button></a>
-                    </section>
-                    <section class="text-center hero-quote-md d-none d-md-block">
-                            <h1>"We have one passion: Hamburgers"</h1>
-                            <a href="#reservation-nav"><button class="btn hero-button">Place a Reservation</button></a>
-                    </section>
+                <section class="text-center hero-quote d-md-none">
+                    <span>"We have one passion: Hamburgers"</span>
+                    <a href="#reservation-nav"><button class="btn hero-button">Place a Reservation</button></a>
+                </section>
+                <section class="text-center hero-quote-md d-none d-md-block">
+                    <span>"We have one passion: Hamburgers"</span>
+                    <br>
+                    <a href="#reservation-nav"><button class="btn hero-btn">Place a Reservation</button></a>
+                </section>
             </div>
         </div>
 
@@ -71,11 +72,12 @@
     <!-- Restaurant Promise -->
 
     <div class="container bg-color-promise" id="promise-nav">
-        <div class="row promise-row">
+        <div class="row promise-row promise-container">
             <div class="col-md-6">
                 <h1 class="promise-header">Our Promise</h1>
                 <p class="promise-text">
-                    We have one passion: Hamburgers. Ever since 2012, it's been our mission to create the best burger
+                    At Signature we have one passion: Hamburgers. Ever since 2012, it's been our mission to create the
+                    best burger
                     possible. We've experimented with different cuts of meat, various buns, many, many sauces and,
                     never lost sight of what the outcome must be. The best burger we can make.
                 </p>
@@ -96,7 +98,7 @@
 
     <!-- Restaurant Menu -->
 
-    <div class="container bg-color-menu">
+    <div class="container bg-color-menu menu-container">
 
         <div class="row" id="menu-nav">
             <div class="col">
@@ -115,48 +117,88 @@
 
         <div class="row">
 
-            <div class="col-md-4 menu-items">
+            <div class="col-md-4 menu-items text-center">
                 <h3 class="d-md-none menu-sub-header">Hamburgers</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia?
-                </p>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia?
-                </p>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia?
-                </p>
+                <div class="menu-item-container">
+                    <h6 class="menu-item-header">Hamburger</h6>
+                    <span>125 SEK</span>
+                    <p>
+                        150g patty served on a potato bun with pickles, onion, lettauce, and our homemade sauce.
+                        Acually, it's all home made!
+                    </p>
+                </div>
+                <div class="menu-item-container">
+                    <h6 class="menu-item-header">Cheeseburger</h6>
+                    <span>150 SEK</span>
+                    <p>
+                        2x75g patties served on a potato bun with sharp cheddar, emmenthaler, comté, and onion. A burger
+                        you'll never get enough of!
+                    </p>
+                </div>
+                <div class="menu-item-container">
+                    <h6 class="menu-item-header">Truffle Burger</h6>
+                    <span>150 SEK</span>
+                    <p>
+                        150g patty served on a potato bun with pickles, onion, lettauce, and our homemade sauce.
+                    </p>
+                </div>
             </div>
 
-            <div class="col-md-4">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia?
-                </p>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia?
-                </p>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia?
-                </p>
+            <div class="col-md-4 menu-items text-center">
+                <div class="menu-item-container">
+                    <h6 class="menu-item-header">Stockholm</h6>
+                    <span>125 SEK</span>
+                    <p>
+                        With 200g of grassfed beef, our special sauce and a special brioche bun. This is our celebration
+                        to our beloved hometown.
+                    </p>
+                </div>
+                <div class="menu-item-container">
+                    <h6 class="menu-item-header">Mälaren</h6>
+                    <span>125 SEK</span>
+                    <p>
+                        Cod, tartar sauce, pickles and fresh lettauce on a potato bun. We hope the sailors of Lake
+                        Mälaren would be proud.
+                    </p>
+                </div>
+                <div class="menu-item-container">
+                    <h6 class="menu-item-header">Djurgården</h6>
+                    <span>125 SEK</span>
+                    <p>
+                        Made from portobello mushroom and house sauce we think you won't be able to get enough of it!
+                        Named for the island of Djurgården.
+                    </p>
+                </div>
             </div>
-
-            <div class="col-md-4">
+            <div class="col-md-4 menu-items text-center">
                 <h3 class="d-md-none menu-sub-header">Sides</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia?
-                </p>
 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia?
-                </p>
+                <div class="menu-item-container">
+                    <h6 class="menu-item-header">Fries</h6>
+                    <span>50 SEK</span>
+                    <p>
+                        We double fry our hand cut russet potatoes to get them extra crispy. They'll show you the way a
+                        fry is meant to be cooked.
+                    </p>
+                </div>
 
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, officia?
-                </p>
+                <div class="menu-item-container">
+                    <h6 class="menu-item-header">Onion Rings</h6>
+                    <span>50 SEK</span>
+                    <p>
+                        Onion. Flour. Eggs. Spices, and Breadcrumbs. We fry it up and serve them fresh. No frills, just
+                        amazing onion rings.
+                    </p>
+                </div>
+
+                <div class="menu-item-container">
+                    <h6 class="menu-item-header">Halloumi Fries</h6>
+                    <span>75 SEK</span>
+                    <p>
+                        For those of you that can't get enough cheese no matter what. We cut Halloumi into strips,
+                        batter and fry it. For justice.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -169,28 +211,28 @@
                 <h1>Reservation</h1>
                 <form action="" class="reservation-form">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-xs-12 col-sm-6">
                             <input type="text" placeholder="First Name" class="form-control" id="form-first-name">
                         </div>
-                        <div class="col">
+                        <div class="col-xs-12 col-sm-6">
                             <input type="text" placeholder="Last Name" class="form-control" id="form-last-name">
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col">
+                        <div class="col-xs-12 col-sm-6">
                             <input type="text" placeholder="Phone Number" class="form-control" id="form-phone">
                         </div>
-                        <div class="col">
+                        <div class="col-xs-12 col-sm-6">
                             <input type="email" placeholder="Email adress" class="form-control" id="form-email">
                         </div>
                     </div>
 
                     <div class="row">
-                        <div class="col">
+                        <div class="col-xs-12 col-sm-6">
                             <input class="form-control" type="date" value="2019-12-22" id="example-date-input">
                         </div>
-                        <div class="col">
+                        <div class="col-xs-12 col-sm-6">
                             <select class="custom-select">
                                 <option selected>17.00</option>
                                 <option value="1">18.00</option>
@@ -200,7 +242,9 @@
                             </select>
                         </div>
                     </div>
-
+                    <div class="row">
+                        <button type="submit" class="hero-btn">Place Reservation</button>
+                    </div>
                 </form>
             </div>
 
@@ -249,7 +293,7 @@
 
     <!-- Footer -->
 
-    <footer class="conatiner-fluid">
+    <!-- <footer class="conatiner-fluid">
         <div class="row bg-color-footer">
             <div class="col-md-4">
                 <p>
@@ -263,7 +307,7 @@
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
         </div>
-    </footer>
+    </footer> -->
 
 </body>
 
