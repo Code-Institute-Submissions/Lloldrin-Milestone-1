@@ -4,7 +4,7 @@
 
 /* ---------- Colors ---------- */
 
-.bg-navbar {
+.bg-color-nav {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -14,9 +14,9 @@
     border-color: #ec7f01;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 576px) {
     .bg-color-nav {
-        background-color: rgba(0, 0, 0, 0.5)
+        background-color: rgba(0, 0, 0, 0.0)
     }
 }
 
@@ -109,12 +109,18 @@ p {
     text-decoration: none;
     font-family: monospace;
     font-size: 24px;
-    border: 2px solid;
-    color: #ec7f01
+    text-transform: uppercase;
+    border: 2px solid #ec7f01;
+    color: #ec7f01;
+    padding: 0px 10px; 
+}
+
+.navbar-dark .navbar-brand {
+    color: #ec7f01;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #ec7f01;
+    color: #fafafa;
 }
 
 /* ---------- Hero Image ---------- */
