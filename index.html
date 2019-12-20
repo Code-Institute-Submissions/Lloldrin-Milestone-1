@@ -8,6 +8,9 @@
     <title>Signature</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/8e5393239d.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 
@@ -16,9 +19,49 @@
     <!-- Navigation -->
 
     <header>
-        <nav class="navbar navbar-expand-sm fixed-top navbar-dark main-nav bg-color-nav">
+
+        <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-navbar">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#promise-nav">Promise</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="navbar-brand" href="#">LOGOPLACEHOLDER</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu-nav">Menu</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reservation-nav">Reservation</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <!-- <nav class="navbar navbar-expand-sm fixed-top navbar-dark main-nav bg-color-nav">
             <div class="container">
-                <div class="collapse navbar-collapse" id="navbar1">
+
+                <button class="navbar-toggler" id="bg-navbar-togger" type="button" data-toggle="collapse"
+                    data-target=".navbar-item" aria-controls="navbar-item" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="fas fa-hamburger"></i>
+                </button>
+
+                <div class="collapse navbar-collapse navbar-item mx-auto">
                     <ul class="nav navbar-nav1">
                         <li class="nav-item active">
                             <a class="nav-link" href="#">Home</a>
@@ -26,13 +69,11 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#promise-nav">Promise</a>
                         </li>
-                    </ul>
-                </div>
-                <ul class="nav navbar-nav mx-auto d-none d-md-block">
-                    <li class="nav-item"><a class="nav-link logo" href="#">SIGNATURE</a></li>
-                </ul>
-                <div class="collapse navbar-collapse" id="navbar2">
-                    <ul class="nav navbar-nav2" id="navbarSupportedContent">
+
+                        <li class="nav-item">
+                            <a class="nav-link logo" href="#">SIGNATURE</a>
+                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link" href="#menu-nav">Menu</a>
                         </li>
@@ -41,13 +82,9 @@
                         </li>
                     </ul>
                 </div>
-                <button class="navbar-toggler" id="bg-navbar-togger" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent #navbar-nav1 #navbar-nav2"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-hamburger"></i>
-                </button>
             </div>
-        </nav>
+        </nav> -->
+
     </header>
 
     <!-- Hero Image -->
@@ -271,36 +308,51 @@
     </div>
 
 
-    <!-- Testimonials & Google Maps Navigation -->
+    <!-- Testimonials -->
     <div class="bg-color-testimonials">
         <div class="container">
             <div class="row">
+                <div class="col">
+                    <h1 class="testimonials-header">Testimonials</h1>
+                </div>
+            </div>
+            <div class="row">
 
-                <div class="col-md-4 testimonial-styling">
-
-                    <h1 class="testimonial-header">Testimonials</h1>
-
-                    <p>
-                        <i class="fas fa-hamburger"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias
-                        nemo
-                        necessitatibus enim sapiente,
-                        nesciunt cum impedit maxime qui aspernatur neque.
+                <div class="col-md-4">
+                    <p class=testimonials-text>
+                        This place has friendly employees and is clean and is child friendly!
+                        I think this was the best burger I have ever had and I still crave.
+                        The burger was beyond juicy and had an amazing flavor and the Halloumi Fries tied so well with
+                        it!
+                        <br>
+                        <i>Haley</i>
                     </p>
-
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nemo necessitatibus enim
-                        sapiente,
-                        nesciunt cum impedit maxime qui aspernatur neque.
-                    </p>
-
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nemo necessitatibus enim
-                        sapiente,
-                        nesciunt cum impedit maxime qui aspernatur neque.
-                    </p>
+                    <hr class="d-md-none testimonials-line">
                 </div>
 
-                <div class="col-md-8">
+                <div class="col-md-4">
+                    <p class=testimonials-text>
+                        Such a great spot for burger lovers! I came here to have dinner before going out and
+                        everything turned super. The Stockholm burger was delicious. Firstly I couldn't choose between
+                        Stockholm and Truffle Burger, so this is one of the reasons that I will be back next time to try
+                        the Truffle Burger!
+                        <br>
+                        <i>Peter</i>
+                    </p>
+                    <hr class="d-md-none testimonials-line">
+                </div>
+
+                <div class="col-md-4">
+                    <p class=testimonials-text>
+                        These burgers are FRESH. You can tell that these patties are never frozen. The ingredients are
+                        also fresh: crisp and cold lettuce, tomato, pickles, etc.
+                        <br>
+                        There are a few different burgers to chose from, varying with toppings. They also serve
+                        twice-fried fries, which are SUPER CRISP and crunchy!
+                        <br>
+                        <i>Jacob</i>
+                    </p>
+                    <hr class="d-md-none testimonials-line">
 
                 </div>
             </div>
@@ -326,5 +378,6 @@
     </footer>
 
 </body>
+
 
 </html>
