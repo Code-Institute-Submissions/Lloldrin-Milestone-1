@@ -24,16 +24,20 @@
     background-color: #ec7f01;
 }
 
+.bg-color-testimonials {
+    background-color: #000000;
+}
+
 .bg-color-footer {
     background-color: #686868;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #333333;
+    color: #2a2a2a;
 }
 
 p {
-    color: #333333;
+    color: #2a2a2a;
 }
 
 /* ---------- General Styling ---------- */
@@ -48,6 +52,17 @@ html {
 
 a {
     text-decoration: none;
+}
+
+.btn {
+    color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    border: 1px solid #fafafa;
+    border-radius: 0;
+    margin: auto;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* ---------- General Text Styling ---------- */
@@ -121,17 +136,6 @@ p {
     font-family: 'Montserrat', sans-serif;
 }
 
-.hero-btn {
-    color: #fafafa;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
-    border: 1px solid #fafafa;
-    border-radius: 0;
-    margin: auto;
-    margin-top: 25px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
 .hero-btn:hover {
     background-color: rgba(239, 127, 1, 0.5);
     color: #fafafa;
@@ -148,8 +152,10 @@ p {
     color: #ec7f01;
 }
 
-.promise-header-md {
-    margin-top: 25%;
+@media (min-width: 576px) {
+    .promise-header {
+        margin-top: 25%;
+    }
 }
 
 .promise-text {
@@ -173,6 +179,7 @@ p {
 /* ---------- Menu ---------- */
 
 .menu-container {
+    padding-top: 50px;
     padding-bottom: 50px;
 }
 
@@ -234,23 +241,15 @@ p {
     padding-bottom: 30px;
 }
 
-.form-reservation-field {
-    max-width: 75%;
+.reservation-form {
+    width: 80%;
     margin: auto;
-    padding: 10px 0px;
 }
 
-@media (min-width: 576px) {
-    .form-reservation-field {
-        max-width: 40%;
-    }
-}
-
-.form-btn {
+.form-control {
     color: #fafafa;
     font-family: 'Montserrat', sans-serif;
-    font-size: 1.5em;
-    border: 1px solid #ec7f01;
+    border: 1px solid #fafafa;
     border-radius: 0;
     margin: auto;
     margin-top: 25px;
@@ -258,40 +257,13 @@ p {
 }
 
 .form-btn:hover {
-    background-color: rgba(239, 127, 1, 0.5);
+    color: #fafafa; 
+    background-color: rgba(239, 127, 1, 0.3);
+    border: 1px solid #ec7f01;
 }
 
 .reservation-header, 
 .contact-header {
     color: #fafafa;
-}
-
-@media (min-width: 576px) {
-    .form-reservation-field {
-        max-width: 40%;
-    }
-}
-
-.contact-info .key,
-.contact-info .value {
-    display: inline-block;
-}
-
-.key {
-    padding-left: 5%;
-    width: 30%;
-}
-
-.value {
-    padding-left: 15%;
-}
-
-.contact-key,
-.contact-value {
-    color: #fafafa;
-}
-
-.contact-key {
-    text-transform: uppercase;
-    font-weight: 400;
+    text-align: center;
 }
