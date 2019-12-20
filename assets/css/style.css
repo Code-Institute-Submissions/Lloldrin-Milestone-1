@@ -1,12 +1,21 @@
 /* ---------- Imported Fonts ---------- */
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,700i|Oswald:300,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,700i|Oswald:300,400,500,700&display=swap');
 
 /* ---------- Colors ---------- */
 
-.bg-color-nav {
-    background-color: rgba(0, 0, 0, 0.5)
+#bg-navbar-togger {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ec7f01;
+    border-color: #ec7f01;
 }
+
+@media (min-width: 576px) {
+    .bg-color-nav {
+        background-color: rgba(0, 0, 0, 0.5)
+    }
+}
+
 .bg-color-promise {
     background-color: #000000;
 }
@@ -19,12 +28,7 @@
     background-color: #686868;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     color: #333333;
 }
 
@@ -36,29 +40,25 @@ p {
 
 html {
     scroll-behavior: smooth;
-  }
+}
 
 .image-padding {
-    padding: 0px; 
+    padding: 0px;
 }
 
 a {
- text-decoration: none;
+    text-decoration: none;
 }
 
 /* ---------- General Text Styling ---------- */
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
     margin: 0px;
     padding-bottom: 25px;
     text-transform: uppercase;
+    line-height: 1;
 }
 
 h1 {
@@ -66,7 +66,6 @@ h1 {
 }
 
 p {
-    color: #333333;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -76,6 +75,7 @@ p {
     margin-right: 0;
     margin-left: auto;
 }
+
 .nav-link {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.2em;
@@ -87,22 +87,21 @@ p {
     text-decoration: none;
     font-family: monospace;
     font-size: 24px;
-    border: 2px solid;  
+    border: 2px solid;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-    color: #ec7f01; 
+    color: #ec7f01;
 }
 
 /* ---------- Hero Image ---------- */
 
-
 .hero-image {
     background-image: url("../images/signatureHero.jpeg");
     background-size: cover;
+    background-attachment: fixed;
     max-width: 100%;
     height: 100vh;
-    background-attachment: fixed;
 }
 
 .hero-quote {
@@ -115,8 +114,7 @@ p {
     margin-top: 20%;
 }
 
-.hero-quote span,
-.hero-quote-md span {
+.hero-quote span, .hero-quote-md span {
     color: #fafafa;
     font-weight: 700;
     font-size: 3em;
@@ -127,10 +125,10 @@ p {
     color: #fafafa;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5em;
-    border: 1px solid #fafafa; 
+    border: 1px solid #fafafa;
     border-radius: 0;
     margin: auto;
-    margin-top: 25px; 
+    margin-top: 25px;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -140,6 +138,11 @@ p {
 }
 
 /* ---------- Our Promise ---------- */
+
+.promise-header,
+.promise-text {
+    position: sticky;
+}
 
 .promise-header {
     color: #ec7f01;
@@ -170,16 +173,15 @@ p {
 /* ---------- Menu ---------- */
 
 .menu-container {
-        padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .menu-item-container {
-    height: 31%;
     border-radius: 12px;
-    margin: 12px
+    padding-bottom: 12px;
 }
 
-.menu-item-container:hover{
+.menu-item-container:hover {
     background-color: rgba(255, 213, 179, 0.5);
 }
 
@@ -195,8 +197,13 @@ p {
     font-weight: 600;
     margin-top: 15px;
     margin-bottom: 0px;
-    padding-top: 10px; 
+    padding-top: 10px;
     padding-bottom: 0px;
+}
+
+.menu-subheader {
+    padding-top: 25px;
+    padding-bottom: 10px;
 }
 
 .menu-items span {
@@ -204,5 +211,87 @@ p {
     font-weight: 300;
 }
 
-/* ---------- Testimonials ---------- */
+.menu-subheader-line,
+.menu-md-subheader-line {
+    width: 25%;
+    margin: auto;
+    border: 1px solid #333333;
+}
 
+.menu-subheader-line {
+    width: 75%
+}
+
+
+/* ---------- Form ---------- */
+
+/* Getting the transparent overlay of the background image with a linear gradient was taken from : https://css-tricks.com/tinted-images-multiple-backgrounds/ */
+
+.bg-form-container {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/signatureForm.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 30px;
+}
+
+.form-reservation-field {
+    max-width: 75%;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+@media (min-width: 576px) {
+    .form-reservation-field {
+        max-width: 40%;
+    }
+}
+
+.form-btn {
+    color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5em;
+    border: 1px solid #ec7f01;
+    border-radius: 0;
+    margin: auto;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.form-btn:hover {
+    background-color: rgba(239, 127, 1, 0.5);
+}
+
+.reservation-header, 
+.contact-header {
+    color: #fafafa;
+}
+
+@media (min-width: 576px) {
+    .form-reservation-field {
+        max-width: 40%;
+    }
+}
+
+.contact-info .key,
+.contact-info .value {
+    display: inline-block;
+}
+
+.key {
+    padding-left: 5%;
+    width: 30%;
+}
+
+.value {
+    padding-left: 15%;
+}
+
+.contact-key,
+.contact-value {
+    color: #fafafa;
+}
+
+.contact-key {
+    text-transform: uppercase;
+    font-weight: 400;
+}

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Signature</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/8e5393239d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
 </head>
 
@@ -28,7 +28,7 @@
                         </li>
                     </ul>
                 </div>
-                <ul class="nav navbar-nav mx-auto">
+                <ul class="nav navbar-nav mx-auto d-none d-md-block">
                     <li class="nav-item"><a class="nav-link logo" href="#">SIGNATURE</a></li>
                 </ul>
                 <div class="collapse navbar-collapse" id="navbar2">
@@ -41,10 +41,10 @@
                         </li>
                     </ul>
                 </div>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent #navbar-nav2" aria-controls="navbarSupportedContent"
+                <button class="navbar-toggler" id="bg-navbar-togger" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent #navbar-nav1 #navbar-nav2" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <i class="fas fa-hamburger"></i>
                 </button>
             </div>
         </nav>
@@ -57,7 +57,7 @@
             <div class="col hero-image">
                 <section class="text-center hero-quote d-md-none">
                     <span>"We have one passion: Hamburgers"</span>
-                    <a href="#reservation-nav"><button class="btn hero-button">Place a Reservation</button></a>
+                    <a href="#reservation-nav"><button class="btn hero-btn">Place a Reservation</button></a>
                 </section>
                 <section class="text-center hero-quote-md d-none d-md-block">
                     <span>"We have one passion: Hamburgers"</span>
@@ -98,7 +98,7 @@
 
     <!-- Restaurant Menu -->
 
-    <div class="container bg-color-menu menu-container">
+    <div class="container no-gutter bg-color-menu menu-container">
 
         <div class="row" id="menu-nav">
             <div class="col">
@@ -108,10 +108,12 @@
 
         <div class="row">
             <div class="col-md-8">
-                <h3 class="d-none d-md-block menu-sub-header">Hamburgers</h3>
+                <h3 class="d-none d-md-block menu-md-subheader">Hamburgers</h3>
+                <hr class="d-none d-md-block menu-md-subheader-line">
             </div>
             <div class="col-md-4">
-                <h3 class="d-none d-md-block menu-sub-header">Sides</h3>
+                <h3 class="d-none d-md-block menu-md-subheader">Sides</h3>
+                <hr class="d-none d-md-block menu-md-subheader-line">
             </div>
         </div>
 
@@ -119,6 +121,7 @@
 
             <div class="col-md-4 menu-items text-center">
                 <h3 class="d-md-none menu-sub-header">Hamburgers</h3>
+                <hr class="d-md-none menu-subheader-line">
                 <div class="menu-item-container">
                     <h6 class="menu-item-header">Hamburger</h6>
                     <span>125 SEK</span>
@@ -139,7 +142,8 @@
                     <h6 class="menu-item-header">Truffle Burger</h6>
                     <span>150 SEK</span>
                     <p>
-                        150g patty served on a potato bun with pickles, onion, lettauce, and our homemade sauce.
+                        150g patty served on a potato bun with truffle sauce, lettauce and tomato. Nothing else, just
+                        pure flavour.
                     </p>
                 </div>
             </div>
@@ -165,16 +169,16 @@
                     <h6 class="menu-item-header">Djurgården</h6>
                     <span>125 SEK</span>
                     <p>
-                        Made from portobello mushroom and house sauce we think you won't be able to get enough of it!
-                        Named for the island of Djurgården.
+                        Made with portobello mushroom and the house sauce we think you won't be able to get enough of
+                        it!
                     </p>
                 </div>
             </div>
             <div class="col-md-4 menu-items text-center">
-                <h3 class="d-md-none menu-sub-header">Sides</h3>
-
+                <h3 class="d-md-none menu-subheader">Sides</h3>
+                <hr class="d-md-none menu-subheader-line">
                 <div class="menu-item-container">
-                    <h6 class="menu-item-header">Fries</h6>
+                    <h6 class="menu-item-header">The House Fries</h6>
                     <span>50 SEK</span>
                     <p>
                         We double fry our hand cut russet potatoes to get them extra crispy. They'll show you the way a
@@ -205,57 +209,95 @@
 
     <!-- Reservation Form & Contact information -->
 
-    <div class="container">
-        <div class="row" id="reservation-nav">
-            <div class="col-md-8">
-                <h1>Reservation</h1>
-                <form action="" class="reservation-form">
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <input type="text" placeholder="First Name" class="form-control" id="form-first-name">
+    <div class="container-fluid bg-form-container">
+        <div class="bg-form-overlay">
+            <div class="row" id="reservation-nav">
+                <div class="col-md-2"></div>
+                <div class="col-md-6">
+                    <h1 class="reservation-header">Reservation</h1>
+                    <form action="" class="reservation-form">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 form-reservation-field">
+                                <input type="text" placeholder="First Name" class="form-control" id="form-first-name">
+                            </div>
+                            <div class="col-xs-12 col-sm-6 form-reservation-field">
+                                <input type="text" placeholder="Last Name" class="form-control" id="form-last-name">
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <input type="text" placeholder="Last Name" class="form-control" id="form-last-name">
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <input type="text" placeholder="Phone Number" class="form-control" id="form-phone">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 form-reservation-field">
+                                <input type="text" placeholder="Phone Number" class="form-control" id="form-phone">
+                            </div>
+                            <div class="col-xs-12 col-sm-6 form-reservation-field">
+                                <input type="email" placeholder="Email adress" class="form-control" id="form-email">
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <input type="email" placeholder="Email adress" class="form-control" id="form-email">
-                        </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-xs-12 col-sm-6">
-                            <input class="form-control" type="date" value="2019-12-22" id="example-date-input">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 form-reservation-field">
+                                <input class="form-control" type="date" value="2019-12-22" id="example-date-input">
+                            </div>
+                            <div class="col-xs-12 col-sm-6 form-reservation-field">
+                                <select class="custom-select">
+                                    <option selected>17.00</option>
+                                    <option value="1">18.00</option>
+                                    <option value="2">19.00</option>
+                                    <option value="3">20.00</option>
+                                    <option value="4">21.00</option>
+                                </select>
+                            </div>
                         </div>
-                        <div class="col-xs-12 col-sm-6">
-                            <select class="custom-select">
-                                <option selected>17.00</option>
-                                <option value="1">18.00</option>
-                                <option value="2">19.00</option>
-                                <option value="3">20.00</option>
-                                <option value="4">21.00</option>
-                            </select>
+                        <div class="row">
+                            <button type="submit" class="form-btn">Place Reservation</button>
                         </div>
-                    </div>
-                    <div class="row">
-                        <button type="submit" class="hero-btn">Place Reservation</button>
-                    </div>
-                </form>
-            </div>
+                    </form>
+                </div>
 
-            <div class="col-md-4">
-                <h1 class="contact-header">Contact</h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae, atque commodi adipisci earum
-                    vel odit doloribus aliquam explicabo vitae possimus quasi accusantium expedita eveniet mollitia
-                    blanditiis quo facilis aliquid. Libero nesciunt et, vitae possimus cum provident magnam rem illum
-                    culpa.
-                </p>
+                <div class="col-md-2">
+                    <h1 class="contact-header">Contact</h1>
+                    <div class="contact-info">
+                        <div class="key">
+                            <p class="contact-key">
+                                Adress:
+                            </p>
+                        </div>
+                        <div class="value">
+                            <p class="contact-value">Gotgatan 32</p>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="key">
+                            <p class="contact-key">
+                                Telephone:
+                            </p>
+                        </div>
+                        <div class="value">
+                            <p class="contact-value">08 555 29 55</p>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="key">
+                            <p class="contact-key">
+                                Mail:
+                            </p>
+                        </div>
+                        <div class="value">
+                            <p class="contact-value">info@signature.se</p>
+                        </div>
+                    </div>
+                    <div class="contact-info">
+                        <div class="key">
+                            <p class="contact-key">
+                                Opening Hours:
+                            </p>
+                        </div>
+                        <div class="value">
+                            <p class="contact-value">17.00 - 23.00</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2"></div>
             </div>
         </div>
     </div>
@@ -270,7 +312,7 @@
                 <h1 class="testimonial-header">Testimonials</h1>
 
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nemo necessitatibus enim sapiente,
+                    <i class="fas fa-hamburger"></i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias nemo necessitatibus enim sapiente,
                     nesciunt cum impedit maxime qui aspernatur neque.
                 </p>
 
@@ -293,7 +335,7 @@
 
     <!-- Footer -->
 
-    <!-- <footer class="conatiner-fluid">
+    <footer class="container-fluid">
         <div class="row bg-color-footer">
             <div class="col-md-4">
                 <p>
@@ -307,7 +349,7 @@
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
         </div>
-    </footer> -->
+    </footer>
 
 </body>
 
