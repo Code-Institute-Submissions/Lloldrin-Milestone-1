@@ -1,7 +1,6 @@
 /* ---------- Imported Fonts ---------- */
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,700i|Oswald:200,300,400,500,700&display=swap');
-
 /* ---------- Colors ---------- */
 
 .bg-color-nav {
@@ -14,20 +13,8 @@
     border-color: #ec7f01;
 }
 
-@media (max-width: 576px) {
-    .bg-color-nav {
-        background-color: rgba(0, 0, 0, 0.0)
-    }
-
-    .nav-item {
-        background-color: rgba(0, 0, 0, 0.5);
-        width: 50%;
-    }
-}
-
 .bg-color-promise {
     background-color: #000000;
-    padding-top: 30px;
 }
 
 .bg-color-menu {
@@ -41,7 +28,7 @@
 }
 
 .bg-color-footer {
-    background-color: #686868;
+    background-color: #b67a35;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -88,10 +75,6 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
 }
 
-h1 {
-    padding-top: 25px;
-}
-
 p {
     font-family: 'Oswald', sans-serif;
 }
@@ -117,7 +100,7 @@ p {
     text-transform: uppercase;
     border: 2px solid #ec7f01;
     color: #ec7f01;
-    padding: 0px 10px; 
+    padding: 0px 10px;
 }
 
 .navbar-dark .navbar-brand {
@@ -128,30 +111,31 @@ p {
     color: #fafafa;
 }
 
+@media (max-width: 576px) {
+    .bg-color-nav {
+        background-color: rgba(0, 0, 0, 0.0)
+    }
+    .nav-item {
+        margin-top: 5px;
+        border: 1px solid #fafafa;
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 50%;
+    }
+}
+
 /* ---------- Hero Image ---------- */
 
 .hero-image {
     background-image: url("../images/signatureHero.jpeg");
     background-size: cover;
     background-attachment: fixed;
+    background-position-x: center;
     max-width: 100%;
     height: 100vh;
 }
 
-@media (max-width: 576px) {
-    .hero-image {
-        background-position-x: center;
-    }
-}
-
 .hero-quote {
     margin-top: 55%;
-}
-
-.hero-quote-md {
-    width: 90%;
-    margin: auto;
-    margin-top: 20%;
 }
 
 .hero-quote span, .hero-quote-md span {
@@ -166,21 +150,23 @@ p {
     color: #fafafa;
 }
 
+@media (min-width: 576px) {
+    .hero-quote {
+        width: 90%;
+        margin: auto;
+        margin-top: 20%;
+    }
+}
+
 /* ---------- Our Promise ---------- */
 
-.promise-header,
-.promise-text {
-    position: sticky;
+.promise-container {
+    height: 100%;
+    padding-top: 50px;
 }
 
 .promise-header {
     color: #ec7f01;
-}
-
-@media (min-width: 576px) {
-    .promise-header {
-        margin-top: 25%;
-    }
 }
 
 .promise-text {
@@ -198,24 +184,23 @@ p {
     max-height: 100%;
 }
 
-.promise-container {
-    height: 100%;
+@media (min-width: 576px) {
+    .promise-header {
+        margin-top: 25%;
+        padding-top: 0px;
+    }
 }
 
 /* ---------- Menu ---------- */
 
 .bg-color-menu {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .menu-item-container {
     border-radius: 12px;
     padding-bottom: 12px;
-}
-
-.menu-item-container:hover {
-    background-color: rgba(255, 213, 179, 0.5);
 }
 
 .menu-items p {
@@ -244,8 +229,7 @@ p {
     font-weight: 300;
 }
 
-.menu-subheader-line,
-.menu-md-subheader-line {
+.menu-subheader-line, .menu-md-subheader-line {
     width: 25%;
     margin: auto;
     border: 1px solid #2a2a2a;
@@ -255,6 +239,11 @@ p {
     width: 75%
 }
 
+@media (min-width: 576px) {
+    .menu-item-container:hover {
+        background-color: rgba(255, 213, 179, 0.5);
+    }
+}
 
 /* ---------- Form ---------- */
 
@@ -264,8 +253,8 @@ p {
     background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../images/signatureForm.jpg);
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .reservation-form {
@@ -284,22 +273,26 @@ p {
 }
 
 .form-btn:hover {
-    color: #fafafa; 
+    color: #fafafa;
     background-color: rgba(239, 127, 1, 0.3);
     border: 1px solid #ec7f01;
 }
 
-.reservation-header, 
-.contact-header {
+.reservation-header, .contact-header {
     color: #fafafa;
     text-align: center;
 }
 
 /* ---------- Testimonials ---------- */
 
+.bg-color-testimonials {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .testimonials-header {
     text-align: center;
-    margin: auto; 
+    margin: auto;
     color: #ec7f01;
 }
 

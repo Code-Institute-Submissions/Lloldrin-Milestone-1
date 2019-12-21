@@ -56,39 +56,6 @@
             </div>
         </nav>
 
-        <!-- <nav class="navbar navbar-expand-sm fixed-top navbar-dark main-nav bg-color-nav">
-            <div class="container">
-
-                <button class="navbar-toggler" id="bg-navbar-togger" type="button" data-toggle="collapse"
-                    data-target=".navbar-item" aria-controls="navbar-item" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <i class="fas fa-hamburger"></i>
-                </button>
-
-                <div class="collapse navbar-collapse navbar-item mx-auto">
-                    <ul class="nav navbar-nav1">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#promise-nav">Promise</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link logo" href="#">SIGNATURE</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#menu-nav">Menu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#reservation-nav">Reservation</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav> -->
-
     </header>
 
     <!-- Hero Image -->
@@ -96,11 +63,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col hero-image">
-                <section class="text-center hero-quote d-md-none">
-                    <span>"We have one passion: Hamburgers"</span>
-                    <a href="#reservation-nav"><button class="btn hero-btn">Place a Reservation</button></a>
-                </section>
-                <section class="text-center hero-quote-md d-none d-md-block">
+                <section class="text-center hero-quote">
                     <span>"We have one passion: Hamburgers"</span>
                     <br>
                     <a href="#reservation-nav"><button class="btn hero-btn">Place a Reservation</button></a>
@@ -134,17 +97,17 @@
                     </p>
                 </div>
                 <div class="col-md-6 image-padding">
-                    <img src="assets/images/signatureQuest.jpg" alt="picture of falling burger" class="promise-burger">
+                    <img src="assets/images/signatureQuest.png" alt="picture of falling burger" class="promise-burger">
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Restaurant Menu -->
-    <div class="bg-color-menu">
+    <div class="bg-color-menu" id="menu-nav">
         <div class="container menu-container">
 
-            <div class="row" id="menu-nav">
+            <div class="row">
                 <div class="col">
                     <h1 class="menu-header">Menu</h1>
                 </div>
@@ -259,9 +222,9 @@
     </div>
 
     <!-- Reservation Form & Contact information -->
-    <div class="bg-form-container">
+    <div class="bg-form-container" id="reservation-nav">
         <div class="container">
-            <div class="row" id="reservation-nav">
+            <div class="row">
                 <div class="col-md-8">
                     <h1 class="reservation-header">Reservation</h1>
                     <form action="" class="reservation-form">
@@ -354,10 +317,8 @@
                         There are a few different burgers to chose from, varying with toppings. They also serve
                         twice-fried fries, which are SUPER CRISP and crunchy!
                         <br>
-                        <i style="text-align: right;">Jacob</i>
+                        <i>Jacob</i>
                     </p>
-                    <hr class="d-md-none testimonials-line">
-
                 </div>
             </div>
         </div>
@@ -365,7 +326,8 @@
 
     <!-- Footer -->
 
-    <footer class="container bg-color-footer">
+    <footer class="bg-color-footer">
+        <div class="container">
         <div class="row">
             <div class="col-md-4">
                 <p>
@@ -379,6 +341,7 @@
             <div class="col-md-4"></div>
             <div class="col-md-4"></div>
         </div>
+    </div>
     </footer>
 
 </body>
