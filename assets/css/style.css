@@ -75,6 +75,7 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1;
 }
 
+span,
 p {
     font-family: 'Oswald', sans-serif;
 }
@@ -311,3 +312,45 @@ p {
     margin-bottom: 25px;
     border: 1px solid #ec7f01;
 }
+
+/* ---------- Footer ---------- */
+
+
+.bg-color-footer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.social-styling { 
+    padding-top:50px;
+    margin: auto;
+}
+
+.social-styling a {
+    font-size: 3em;
+    color: #2a2a2a;
+    padding: 0px 5px;
+}
+
+.social-styling a:hover {
+    color: #fafafa;
+    transition: ease-in-out .15s;
+}
+
+.contact-styling {
+    color: #2a2a2a;
+    margin: auto;
+    width: 240px;
+}
+
+.key {
+    font-weight: 700;
+    padding-left: 20%;
+    text-transform: uppercase;
+}
+
+.value {
+    width: 100%;
+    text-align: right;
+}
+
