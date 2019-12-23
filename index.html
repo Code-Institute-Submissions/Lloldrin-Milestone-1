@@ -230,28 +230,28 @@
                     <form action="" class="reservation-form">
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 form-reservation-field">
-                                <input type="text" placeholder="First Name" class="form-control" id="form-first-name">
+                                <input type="text" placeholder="First Name" class="form-control" id="form-first-name" required>
                             </div>
                             <div class="col-xs-12 col-sm-6 form-reservation-field">
-                                <input type="text" placeholder="Last Name" class="form-control" id="form-last-name">
-                            </div>
-                        </div>
-
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-6 form-reservation-field">
-                                <input type="tel" placeholder="Phone Number" class="form-control" id="form-phone">
-                            </div>
-                            <div class="col-xs-12 col-sm-6 form-reservation-field">
-                                <input type="email" placeholder="Email adress" class="form-control" id="form-email">
+                                <input type="text" placeholder="Last Name" class="form-control" id="form-last-name" required>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 form-reservation-field">
-                                <input class="form-control" type="date" value="2019-12-22" id="form-date-input">
+                                <input type="tel" placeholder="Phone Number" class="form-control" id="form-phone" required>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 form-reservation-field">
+                                <input type="email" placeholder="Email adress" class="form-control" id="form-email" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 form-reservation-field">
+                                <input class="form-control" type="date" value="2019-12-22" id="form-date-input" required>
                             </div>
 
-                            <div class="col-xs-12 col-sm-6 form-reservation-field">
+                            <div class="col-xs-12 col-sm-6 form-reservation-field" required>
                                 <select class="custom-select form-control">
                                     <option selected>17.00</option>
                                     <option value="1">18.00</option>
