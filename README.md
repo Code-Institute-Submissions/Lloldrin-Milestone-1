@@ -4,7 +4,7 @@ This is a website for the fictional hamburger restaurant ”Signature”
  
 ## UX
 
-###User Stories
+### User Stories
  
 New Guest: I want to get a feel for the restaurant and see the menu. I also want to make a reservation if it looks good. 
 
@@ -12,21 +12,21 @@ Repeat Guest: I want to be able to quickly make a reservation.
 
 Owner: I want to drive reservations and make sure that people can find information about our food and skills. 
 
-###Strategy
+### Strategy
 My goal was to make the site feel familiar but daring. Navigation should be intuitive and users should quickly find the information they need.
 
-###Scope
+### Scope
 I identified the two most important parts of a restaurant-site. The menu and the reservation form. Along with that you want to get a feel for the restaurant as well as have their contact information and social media links. 
 
-###Structure 
+### Structure 
 
 
-##Skeleton
+## Skeleton
 [Mobile Wireframe]
 
 [Desktop Wireframe]
 
-###Surface
+### Surface
 The Black/Orange/White colorscheme was chosen to invoke the feeling of burning coal and flame-grilled burgers. The Navigation is mainly in white to break of from the information. The use of pictures was meant to give the feeling of a hip restaurant that cares about the burgers. 
 
 ## Features
@@ -49,7 +49,8 @@ The Black/Orange/White colorscheme was chosen to invoke the feeling of burning c
 ## Technologies Used
 
 **HTML**
- **CSS** 
+
+**CSS** 
 
 **Bootstrap** (https://getbootstrap.com/)
 	This project uses bootstrap for styling, navbar and grid system
@@ -84,7 +85,7 @@ The text for ”Our Promise” and the Menu are originally written by me, Dougla
 
 The text for the testimonials are modified versions of reviews on www.yelp.com
 
-###Photos 
+### Photos
 signatureHero - Photo by John Lorenz Tajonera on Unsplash
 
 signaturePromise - Photo by Pablo Merchán Montes on Unsplash
