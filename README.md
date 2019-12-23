@@ -1,8 +1,10 @@
 # Signature Hamburger Bar 
 
-This is a website for the fictional hamburger restaurant ”Signature”
- 
+This website is for the Hamburger bar "Signature". It's purpose is to help the visitors find all the information they need in the form of the menu, reservations and contact information, and to drive traffic and reservations for the owners.
+
 ## UX
+
+[UX Example] (https://github.com/Lloldrin/Milestone-1/blob/master/assets/README%20images/UXshowcase.png)
 
 ### User Stories
  
