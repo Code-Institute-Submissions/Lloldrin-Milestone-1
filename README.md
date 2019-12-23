@@ -114,7 +114,7 @@ The site is hosted on GitHub-Pages.
 To run the site locally
 1. In your terminal, go to a folder you want to save the project in.
 2. Make sure you have git installed and then, to download the project, in the terminal run: 
-     `git clone https://github.com/Lloldrin/Milestone-1.git` 
+     * `git clone https://github.com/Lloldrin/Milestone-1.git` 
 3. The index.html file and README.md files are in the main project folder, the assets are in their respective folders.
 4. To run the site open the index.html in a browser to view the site locally, or open it in an IDE to edit the code. 
 
