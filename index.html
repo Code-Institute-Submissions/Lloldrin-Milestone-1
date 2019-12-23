@@ -40,7 +40,7 @@
                         <a class="nav-link" href="#promise-nav">Promise</a>
                     </li>
 
-                    <li class="nav-item d-none d-md-block">
+                    <li class="nav-item d-none d-lg-block">
                         <a class="navbar-brand logo" href="#">Signature</a>
                     </li>
 
@@ -66,7 +66,10 @@
                 <section class="text-center hero-quote">
                     <h1 class="hero-quote-text">"We have one passion: Hamburgers"</h1>
                     <br>
-                    <button href="#reservation-nav" class="btn hero-btn">Place a Reservation</button>
+
+                    <!-- Button in middle of hero-image to navigate to the reservation form -->
+        
+                    <a href="#reservation-nav" class="btn hero-btn">Place a Reservation</a>
                 </section>
             </div>
         </div>
@@ -239,7 +242,7 @@
 
                         <div class="row">
                             <div class="col-xs-12 col-sm-6 form-reservation-field">
-                                <input type="tel" placeholder="Phone Number" class="form-control" id="form-phone" required>
+                                <input type="number" placeholder="Phone Number" class="form-control" id="form-phone" required>
                             </div>
                             <div class="col-xs-12 col-sm-6 form-reservation-field">
                                 <input type="email" placeholder="Email adress" class="form-control" id="form-email" required>
@@ -261,9 +264,32 @@
                                 </select>
                             </div>
                         </div>
+
+                        <!-- Submit button for the reservation form, opens a modal that confirms the reservation -->
+
                         <div class="row">
-                            <button type="submit" value="submit" class="btn form-btn">Place Reservation</button>
-                        </div>
+                            <button type="submit" value="submit" class="btn form-btn" data-toggle="modal" data-target="#reservation-modal">Place Reservation</button>
+                        </div>  
+
+                        <!-- Modal to confirm the reservation form -->
+
+                        <div class="modal fade text-center" id="reservation-modal" tabindex="-1" role="dialog" aria-labelledby="reservation-modal-label" aria-hidden="true">
+                            <div class="modal-dialog" role="document">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h5 class="modal-title" id="reservation-modal">Reservation complete!</h5>
+                                </div>
+
+                                <div class="modal-body">
+                                  We are super excited to have to and hope that you will have a wonderful time at signature!
+                                </div>
+
+                                <div class="modal-footer">
+                                   <button type="button" class="btn form-btn" data-dismiss="modal">Close</button>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
                     </form>
                 </div>
             </div>
