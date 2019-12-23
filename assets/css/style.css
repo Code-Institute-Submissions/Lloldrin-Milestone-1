@@ -139,7 +139,7 @@ p {
     margin-top: 50%;
 }
 
-.hero-quote h1, .hero-quote-md h1 {
+.hero-quote-text {
     color: #fafafa;
     font-weight: 700;
     font-size: 3em;
