@@ -4,7 +4,7 @@ This website is for the Hamburger bar "Signature". It's purpose is to help the v
 
 ## UX
 
-![UX Example] (https://github.com/Lloldrin/Milestone-1/blob/master/assets/README%20images/UXshowcase.png)
+![UX Example](https://github.com/Lloldrin/Milestone-1/blob/master/assets/README%20images/UXshowcase.png)
 
 ### User Stories
  
