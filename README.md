@@ -22,9 +22,9 @@ I identified the two most important parts of a restaurant-site. The menu and the
 
 
 ## Skeleton
-[Mobile Wireframe]
+[Mobile Wireframe] (https://github.com/Lloldrin/Milestone-1/blob/master/assets/wireframes/WireframeMobile.jpg)
 
-[Desktop Wireframe]
+[Desktop Wireframe] (https://github.com/Lloldrin/Milestone-1/blob/master/assets/wireframes/WireframeDesktop.jpg)
 
 ### Surface
 The Black/Orange/White colorscheme was chosen to invoke the feeling of burning coal and flame-grilled burgers. The Navigation is mainly in white to break of from the information. The use of pictures was meant to give the feeling of a hip restaurant that cares about the burgers. 
